@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Albireo.SecureRandom;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -52,5 +53,10 @@ namespace Guildie.Application.Generate.Weapons
 
     internal class SwordGen
     {
+        private SecureRandom rng = new SecureRandom();
+
+        internal async Task<string> GenerateSword()
+        {
+        }
     }
 }
